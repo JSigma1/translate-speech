@@ -61,7 +61,7 @@ async def process_audio(audio_file, is_youtube=False, original_video=None):
         results.append(result)
         await asyncio.sleep(5)  # Delay 5 วิ ต่อ 1 segment
 
-    # รวมไฟล์เสียง
+    # Merge files together
     print("\nCombining segments with ffmpeg...")
 
     with open("segments_list.txt", "w") as f:
